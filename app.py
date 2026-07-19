@@ -5,7 +5,7 @@ import google.generativeai as genai
 import uuid
 from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
-genai.configure(api_key=" ")
+genai.configure(api_key="Gemini_API")
 llm=genai.GenerativeModel("gemini-2.5-flash")
 print("Loading embedding model...")
 embedder=SentenceTransformer("all-MiniLM-L6-v2")
